@@ -9,12 +9,16 @@ import java.io.FileWriter;
 
 public class Main {
     public static void main(String[] args) {
+        //değerleri tanımla ve belirle
         int sum = 0;
         FileReader file;
         file = null;
 
+        // dosya içeriğini yazdır
         System.out.println("sumFile.txt numbers is [15,26,78,91,44]");
 
+
+        //dosyayı oku -> line değerinde endeksle -> ve değerleri topla
         try {
             file = new FileReader("sumFile.txt");
 
@@ -27,6 +31,7 @@ public class Main {
 
             System.out.println("Numbers Sum Result = " + sum);
 
+            // kullanılan methodları kapat
             input.close();
             file.close();
         } catch (Exception e) {
